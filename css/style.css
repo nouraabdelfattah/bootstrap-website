@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "dancing";
+    src: url(../fonts/DancingScript-VariableFont_wght.ttf);
+}
+
+.header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    padding: 10px;
+}
+.title{
+
+color: black;
+}
+.n{
+font-family: dancing;
+color: #c9162e;
+}
+.header-list a{
+    color: #c9162e;
+}
+
+.dropdown-item:active{
+background-color: white;
+}
+.header-search:focus{
+border: 2px solid black;
+box-shadow:none;
+}
+.btn{
+    background-color: #b4071e;
+    color: white;
+}
+.btn:hover,.btn:active{
+    border: 1px solid #770010;
+    background-color: white;
+    color: black;
+    
+}
+.btn2{
+    width: 100px;
+    margin-left: 10px;
+}
+
+
+/* /////////////////////////////////////////////////////////////// */
+.slider{
+    position: relative;
+}
+.slider-content{
+    background-color:#bebebe81;
+    color: black;
+}
+.carousal-arr{
+  z-index: 0;
+}
+@media (max-width: 570px) {
+    .slider-img{
+        height: 250px;
+    }
+    .slider-content{
+        margin: auto;
+        width: 200px;
+        height: 110px;
+        font-size: 11px;
+        margin-bottom: 25px;
+    }
+    .slider-content h5{
+        font-size: 13px;
+    }
+    .slider-content .btn{
+font-size: 10px;
+padding: 4px;
+
+    }
+}
+/* /////////////////////////////////////////////////////////////////////////////////// */
+.section1{
+margin-top: 60px;
+
+}
+
+.section1 h4{
+    font-size: 25px;
+    color:  #770010;
+}
+.section2{
+    margin-top: 80px;
+}
+.section2 h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+  .section2 span ,.section3 span , .section4 span, .section9 p:empty,.section10 span:empty ,.section5 span:empty{
+    display: block;
+    background-color: #770010 ;
+    width: 100px;
+    height: 2px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+.section3{
+    
+    height: 250px;
+    margin-bottom: 110px;
+}
+h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 80px;
+}
+.section3-text-area{
+    background-color:#e4e2e2;
+margin-top: 10px;
+height: 230px;
+border-radius: 10px;
+
+}
+/* .card-section1{
+    width: 80%;
+    margin-left:10% ;
+    
+} */
+.section4{
+    height: 200px;
+ background-image: url(../img/fashion-sale-instagram-stories-collection_23-2149528662.jpg);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+.card-section1 .row{
+    margin-top: 30px;
+    row-gap: 30px;
+    
+    position: relative;
+}
+.card-section1  .card-items{
+    box-shadow: 0.5px 0px 9px rgb(128, 128, 128) ;
+}
+.card-section1  .card-items::after{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:#7902122f ;
+    opacity: 0;
+}
+.card-section1  .card-items::before{
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    background-color:#7902122f ;
+    opacity: 0;
+}
+.card-section1  .card-items:hover::after , .card-section1  .card-items:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+opacity: 1;
+}
+hr{
+    margin-top: 30px;
+}
+
+.section6{
+    height: 200px;
+ background-image: url(../img/three-young-beautiful-smiling-girls-trendy-summer-casual-jeans-clothes-sexy-carefree-women-posing-positive-models-sunglasses.jpg);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+}
+
+.section9 .row{
+    column-gap: 5px;
+}
+.section9-content{
+    border-radius: 10px;
+    height: 300px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.section9-content-img{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/How-To-Become-A-Fashion-Designer-–-A-Beginner’s-Guide-1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+.section9-content-overlay{
+    background-color: rgba(0, 0, 0,0.7);
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+}
+.section9-content-overlay-content{
+    margin-left: 20px;
+    color: white;
+}
+.section9-content-overlay-content p{
+    margin-bottom: 0;
+}
+.section9-content-overlay-content .section9-p{
+margin-top: 20px;
+}
+.section9-content-overlay-content i{
+    font-size: 13px;
+    margin-bottom: 90px;
+}
+.section9-content-overlay-content span{
+    font-size: 12px;
+}
+.section9-content:hover{
+    transform: scale(0.9,0.9);
+    cursor: pointer;
+}
+.section9-content:hover .section9-content-overlay{
+    background:-webkit-linear-gradient(top,rgba(3, 3, 68, 0.7),rgba(34, 33, 33, 0.4))
+}
+/* ////////////////////////////////////////////////////////// */
+.section10{
+    position: relative;
+}
+
+.section10-content{
+    background: -webkit-linear-gradient(left,#8f021527,rgba(255,255,255,0.5));
+    
+}
+
+.section10-item1-title{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+.section10-item1-header{
+    position: relative;
+}
+.section10-item1-header i{
+font-size: 13px;
+    margin-bottom: 10px;
+}
+.section10-item1-header span{
+    display: block;
+    height: 2px;
+    width: 3px;
+    border-radius: 1px;
+    background-color: #b4071e;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+.section10-item1:hover .section10-item1-header span{
+    visibility: visible;
+    width: 100px;
+    transition: 1s;
+
+}
+.section10-content{
+    background-color: -webkit-linear-gradient(left,#a101179a,white);
+    box-shadow:0.2px 0.2px 8px 0.5px rgb(105, 105, 105) ;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.section10-buttons button{
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.section10-buttons button:hover{
+    background-color: rgb(150, 147, 147);
+}
+.section10-buttons .btn3:hover{
+    background-color: #b4071e;
+    color: white;
+}
+.section10-item2{
+    margin: 0;
+    padding: 0;
+}
+.section10-item2 img{
+    
+    width: 100%;
+    height: 300px;
+    clip-path: polygon(19% 0, 100% 0, 100% 100%, 43% 100%);
+}
+@media (max-width:768px) {
+    .section10-item2 img{
+        clip-path: none;
+    }
+}
+.section11{
+    margin-top: 80px;
+    position: relative;
+}
+.section11 .container-fluid{
+    height: 100px;
+}
+.section11 .row{
+    justify-content:space-evenly ;
+   
+}
+.section11-content{
+    box-shadow:0.2px 0.2px 8px 0.5px rgb(105, 105, 105) ;
+    border-radius: 10px;
+    padding: 20px;
+margin-bottom: 30px;
+
+}
+.i-twit{
+    display: block;
+    font-size: 70px;
+    margin-bottom: 10px;
+    color:rgb(59, 59, 199) ;
+   
+}
+.section11-content{
+    text-align: center;
+   
+}
+.section12{
+    background-color:#d8d7d7 ;
+    color: black;
+    bottom: 0;
+}
+.section12 h5{
+    color: black;
+}
+.copyright{
+    background-color: #770010;
+}
+.body-overflow{
+ position: fixed;
+ top: 20%;
+    right: 2%;
+    font-size: 50px;
+    z-index: 20;
+}
+.body-overflow i{
+    display: block;
+    line-height: 80px;
+   color: #9b0015;
+}
